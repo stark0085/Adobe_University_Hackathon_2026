@@ -1,0 +1,82 @@
+{
+  "site": "www.python.org",
+  "audited_at": "2026-09-13T17:59:08Z",
+  "summary": {
+    "total_findings": 7,
+    "critical": 0,
+    "high": 0,
+    "medium": 7
+  },
+  "findings": [
+    {
+      "id": "F-001",
+      "title": "No XML Sitemap found or referenced",
+      "severity": "medium",
+      "evidence": "Neither /sitemap.xml was accessible nor was a Sitemap: directive declared in robots.txt.",
+      "suggested_action": {
+        "summary": "Generate an automated sitemap.xml listing all canonical pages and declare its URL in robots.txt.",
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "F-002",
+      "title": "Multiple competing <h1> headings cause orientation ambiguity",
+      "severity": "medium",
+      "evidence": "Found 5 distinct <h1> tags across parsed DOM, creating conflicting hierarchy signals for visitors and scrapers.",
+      "suggested_action": {
+        "summary": "Consolidate into a single clear <h1> representing the core proposition, demoting secondary headings to <h2>.",
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "F-003",
+      "title": "Subheadings lack persistent citation anchor IDs",
+      "severity": "medium",
+      "evidence": "Only 0/9 (H2-H4) subheadings possess HTML id attributes for fragment deep-linking.",
+      "suggested_action": {
+        "summary": "Attach persistent semantic id attributes (e.g., id='features', id='pricing') to all H2/H3 headers so AI assistants can cite and deep-link directly to factual claims.",
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "F-004",
+      "title": "Missing primary Call to Action (CTA) for AI-referred visitor conversion",
+      "severity": "medium",
+      "evidence": "Scanned interactive elements across DOM; 0 primary conversion CTAs ('Get Started', 'Sign Up', 'Book a Demo', 'Contact Us') detected.",
+      "suggested_action": {
+        "summary": "Add clear, prominent primary Call to Action (CTA) buttons ('Get Started', 'Book a Demo', or 'Contact Us') above the fold and in closing sections to capture AI-referred visitor intent.",
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "F-005",
+      "title": "[Proactive Opportunity] Deploy /llms.txt manifest for discovered documentation assets",
+      "severity": "medium",
+      "evidence": "Discovered 15 documentation/API route(s) (e.g. 'https://docs.python.org'), but no /llms.txt file exists at origin root to guide AI inference engines.",
+      "suggested_action": {
+        "summary": "Deploy this turnkey /llms.txt manifest at your website root to index your 15 documentation routes for instant frontier model ingestion:\n\n```markdown\n# Python.org\n\n> The official home of the Python Programming Language\n\n## Documentation Endpoints\n\n- [Docs Python](https://docs.python.org): Core developer and API documentation.\n- [Help](https://www.python.org/about/help/): Core developer and API documentation.\n- [License](https://docs.python.org/3/license.html): Core developer and API documentation.\n- [Doc](https://www.python.org/doc/): Core developer and API documentation.\n- [Av](https://www.python.org/doc/av): Core developer and API documentation.\n\n## Optional\n\n- [Python.org Full Index](https://www.python.org/llms-full.txt): Complete unpaginated markdown documentation context.\n```",
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "F-006",
+      "title": "[Proactive Opportunity] Structure discovered Q&A content into FAQPage JSON-LD",
+      "severity": "medium",
+      "evidence": "Detected 0 natural question(s) in body copy (e.g. 'What does Python.org do?'), but page lacks structured FAQPage markup.",
+      "suggested_action": {
+        "summary": "Embed this pre-populated Schema.org FAQPage snippet in your HTML <head> to enable zero-shot answer extraction in Perplexity and ChatGPT Search:\n\n```html\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"What does Python.org do?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"The official home of the Python Programming Language\"\n      }\n    }\n  ]\n}\n</script>\n```",
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "F-007",
+      "title": "[Proactive Opportunity] Bridge commercial brand entity to Knowledge Graph registries",
+      "severity": "medium",
+      "evidence": "Commercial product/pricing signals detected, but no Schema.org sameAs links ground the brand to external knowledge graph registries.",
+      "suggested_action": {
+        "summary": "Anchor the brand identity across LLM parametric memory by embedding this Schema.org Organization template in your HTML <head> (replace `<YOUR_*_SLUG>` placeholder tokens with your verified registry URLs):\n\n```html\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Python.org\",\n  \"url\": \"https://www.python.org\",\n  \"description\": \"The official home of the Python Programming Language\",\n  \"sameAs\": [\n    \"https://www.linkedin.com/company/<YOUR_LINKEDIN_SLUG>\",\n    \"https://www.crunchbase.com/organization/<YOUR_CRUNCHBASE_SLUG>\",\n    \"https://github.com/<YOUR_GITHUB_ORG>\"\n  ]\n}\n</script>\n```",
+        "priority": "medium"
+      }
+    }
+  ]
+}

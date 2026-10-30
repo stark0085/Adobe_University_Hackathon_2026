@@ -1,0 +1,208 @@
+{
+  "citation_crawlers": [
+    {
+      "name": "OAI-SearchBot",
+      "user_agent": "OAI-SearchBot",
+      "owner": "OpenAI",
+      "purpose": "SearchGPT and real-time live search indexer",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "ChatGPT-User",
+      "user_agent": "ChatGPT-User/1.0",
+      "owner": "OpenAI",
+      "purpose": "Direct user browse queries and real-time retrieval",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "Claude-SearchBot",
+      "user_agent": "Claude-SearchBot",
+      "owner": "Anthropic",
+      "purpose": "Anthropic live web search and citation indexing",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "Claude-User",
+      "user_agent": "Claude-User",
+      "owner": "Anthropic",
+      "purpose": "User-initiated real-time browsing in Claude",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "PerplexityBot",
+      "user_agent": "PerplexityBot/1.0",
+      "owner": "Perplexity",
+      "purpose": "Perplexity search crawler for real-time answer synthesis",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "Perplexity-User",
+      "user_agent": "Perplexity-User",
+      "owner": "Perplexity",
+      "purpose": "Real-time user lookup and citation retrieval",
+      "severity_if_blocked": "critical"
+    }
+  ],
+  "training_crawlers": [
+    {
+      "name": "GPTBot",
+      "user_agent": "GPTBot/1.2",
+      "owner": "OpenAI",
+      "purpose": "Foundation model pre-training and fine-tuning datasets",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "ClaudeBot",
+      "user_agent": "ClaudeBot/1.0",
+      "owner": "Anthropic",
+      "purpose": "Anthropic foundational model training",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "Google-Extended",
+      "user_agent": "Google-Extended",
+      "owner": "Google",
+      "purpose": "Gemini and Vertex AI model training",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "Applebot-Extended",
+      "user_agent": "Applebot-Extended",
+      "owner": "Apple",
+      "purpose": "Apple Intelligence generative AI foundation models",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "Amazonbot",
+      "user_agent": "Amazonbot/0.1",
+      "owner": "Amazon",
+      "purpose": "Amazon Bedrock & Alexa model training",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "Bytespider",
+      "user_agent": "Bytespider",
+      "owner": "ByteDance",
+      "purpose": "ByteDance / Doubao model training",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "CCBot",
+      "user_agent": "CCBot/2.0",
+      "owner": "Common Crawl",
+      "purpose": "Open-web foundational pre-training corpus",
+      "severity_if_blocked": "high"
+    }
+  ],
+  "crawlers": [
+    {
+      "name": "OAI-SearchBot",
+      "user_agent": "OAI-SearchBot",
+      "owner": "OpenAI",
+      "category": "citation",
+      "purpose": "SearchGPT and real-time live search indexer",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "ChatGPT-User",
+      "user_agent": "ChatGPT-User/1.0",
+      "owner": "OpenAI",
+      "category": "citation",
+      "purpose": "Direct user browse queries and real-time retrieval",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "Claude-SearchBot",
+      "user_agent": "Claude-SearchBot",
+      "owner": "Anthropic",
+      "category": "citation",
+      "purpose": "Anthropic live web search and citation indexing",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "Claude-User",
+      "user_agent": "Claude-User",
+      "owner": "Anthropic",
+      "category": "citation",
+      "purpose": "User-initiated real-time browsing in Claude",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "PerplexityBot",
+      "user_agent": "PerplexityBot/1.0",
+      "owner": "Perplexity",
+      "category": "citation",
+      "purpose": "Perplexity search crawler for real-time answer synthesis",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "Perplexity-User",
+      "user_agent": "Perplexity-User",
+      "owner": "Perplexity",
+      "category": "citation",
+      "purpose": "Real-time user lookup and citation retrieval",
+      "severity_if_blocked": "critical"
+    },
+    {
+      "name": "GPTBot",
+      "user_agent": "GPTBot/1.2",
+      "owner": "OpenAI",
+      "category": "training",
+      "purpose": "Foundation model pre-training and fine-tuning datasets",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "ClaudeBot",
+      "user_agent": "ClaudeBot/1.0",
+      "owner": "Anthropic",
+      "category": "training",
+      "purpose": "Anthropic foundational model training",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "Google-Extended",
+      "user_agent": "Google-Extended",
+      "owner": "Google",
+      "category": "training",
+      "purpose": "Gemini and Vertex AI model training",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "Applebot-Extended",
+      "user_agent": "Applebot-Extended",
+      "owner": "Apple",
+      "category": "training",
+      "purpose": "Apple Intelligence generative AI foundation models",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "Amazonbot",
+      "user_agent": "Amazonbot/0.1",
+      "owner": "Amazon",
+      "category": "training",
+      "purpose": "Amazon Bedrock & Alexa model training",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "Bytespider",
+      "user_agent": "Bytespider",
+      "owner": "ByteDance",
+      "category": "training",
+      "purpose": "ByteDance / Doubao model training",
+      "severity_if_blocked": "high"
+    },
+    {
+      "name": "CCBot",
+      "user_agent": "CCBot/2.0",
+      "owner": "Common Crawl",
+      "category": "training",
+      "purpose": "Open-web foundational pre-training corpus",
+      "severity_if_blocked": "high"
+    }
+  ],
+  "meta_robots_blockers": [
+    "noindex",
+    "noai",
+    "noimageai"
+  ]
+}
